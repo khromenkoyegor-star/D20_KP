@@ -36,27 +36,6 @@
             }
         }
     </script>
-    <style>
-        /* Custom scrollbar for table */
-        .table-container::-webkit-scrollbar {
-            height: 8px;
-        }
-        .table-container::-webkit-scrollbar-track {
-            background: #f1f1f1; 
-        }
-        .table-container::-webkit-scrollbar-thumb {
-            background: #cbd5e1; 
-            border-radius: 4px;
-        }
-        .table-container::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8; 
-        }
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-top: 1px solid rgba(255, 255, 255, 0.5);
-        }
-    </style>
 </head>
 <body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-500 selection:text-white">
 
@@ -149,10 +128,10 @@
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Наша команда</h2>
                     <div class="w-24 h-1 bg-brand-500 mt-6 rounded-full"></div>
                 </div>
-                <div class="mt-6 md:mt-0">
-                    <a href="https://khromenkoyegor-star.github.io/ReferenceLetter/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 bg-white hover:bg-slate-50 hover:text-brand-600 rounded-lg shadow-sm border border-slate-200 text-sm font-medium text-slate-600 transition-colors cursor-pointer group">
-                        <i data-lucide="external-link" class="w-4 h-4 text-brand-500 group-hover:text-brand-600 transition-colors"></i>
-                        <span>Референс лист з об'єктами (окремий архів)</span>
+                <div class="mt-6 md:mt-0 w-full md:w-auto">
+                    <a href="https://khromenkoyegor-star.github.io/ReferenceLetter/" target="_blank" rel="noopener noreferrer" class="flex md:inline-flex items-center justify-center gap-2 px-5 py-3 md:px-4 md:py-2 bg-white hover:bg-brand-50 hover:text-brand-600 hover:border-brand-200 rounded-xl md:rounded-lg shadow-sm border border-slate-200 text-sm md:text-base font-semibold md:font-medium text-slate-700 transition-all cursor-pointer group">
+                        <i data-lucide="external-link" class="w-5 h-5 md:w-4 md:h-4 text-brand-500 group-hover:text-brand-600 transition-colors"></i>
+                        <span>Референс лист з об'єктами</span>
                     </a>
                 </div>
             </div>
@@ -245,8 +224,8 @@
         </div>
     </section>
 
-    <!-- Estimate Table Section -->
-    <section class="py-20 bg-white">
+    <!-- Responsive Estimate Table Section -->
+    <section class="py-20 bg-white md:bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Кошторис</h2>
@@ -254,124 +233,308 @@
                 <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Детальний розрахунок вартості обладнання, матеріалів та послуг.</p>
             </div>
 
-            <div class="bg-white border border-slate-200 rounded-2xl shadow-xl overflow-hidden">
-                <div class="table-container overflow-x-auto">
-                    <table class="w-full text-left border-collapse">
-                        <thead>
-                            <tr class="bg-slate-900 text-white">
-                                <th class="py-4 px-6 font-semibold text-sm w-16 text-center border-b border-slate-700">№</th>
-                                <th class="py-4 px-6 font-semibold text-sm border-b border-slate-700">Назва</th>
-                                <th class="py-4 px-6 font-semibold text-sm w-48 text-right border-b border-slate-700">Вартість, грн</th>
-                                <th class="py-4 px-6 font-semibold text-sm w-1/3 border-b border-slate-700">Примітка</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-slate-100">
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">1</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Обладання Аеростар з автоматикою</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">7 040 495</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">У вартості враховано страхування, гарантія на 1 рік з моменту запуску. Подальше обслуговування рахується за окремим договором.</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">2</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Повітропроводи утеплені в окожушці</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">707 500</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">Попередньо приймаємо площу 200 м.кв внутрішньої поверхні (1200 за квадрат)+ мінвата Lamella Mat 50 мм 250 квадратів (550 за квадрат) + окожушко 300 м.кв. (1100 за квадрат). З урахуванням шинорейки, ущільнювача, герметика і т.п.</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">3</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Метал на кріплення із кутика 40х40х3</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">200 000</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">Вартість орієнтовна, адже ще буде обговорюватися щодо дизайну і загальної технології кріплення. В даній ціні враховано метал + виварення конструкції.</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">4</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Кабельно-провідникова продукція та кабельні канали</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">150 000</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">Дана ціна максимально орієнтовна. Вартість цих матеріалів по факту згідно виконавчої схеми за роздрібними цінами.</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">5</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Монтажний набір</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">120 000</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">Специфічні метізи, скотч фольгований, віброопори та багато іншого.</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">6</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Розробка 3D візуалізації та ВІМ моделювання</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">30 000</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">-</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">7</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Аудит та використання наявних матеріалів</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">10 000</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">Ретельна інвентаризація фасонних деталей, що вже є на об'єкті. По факту використання вартість цих деталей буде відмінусована від фінального кошторису.</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">8</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Розробка деталювання</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">25 000</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">Процес замовлення наявних деталей після етапу погодження і підтвердження.</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">9</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Монтажні роботи повітропроводів на висоті</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">450 000</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">Вартість монтажу 1 м.кв становить 900 грн. Попередньо приймаємо об'єм робіт на 500 м.кв. У вартість рахується площа поверхні повітропроводів та окожушко. Також у вартість входе монтаж і розробка кріплень.</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">10</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Монтаж обладнання</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">300 000</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">З залученням використання підіймальної техніки.</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">11</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Пусконаладжувальні роботи</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">400 000</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">Збір щита автоматики, його налаштування, балансування.</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">12</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Оренда підіймальної техніки</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">60 000</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">6 днів роботи крану для підйому обладнання та матеріалів.</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">13</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Транспортні витрати</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">70 000</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">Орієнтовна вартість. Включає доставку матеріалів та обладнання по Україні та логістика по місту.</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">14</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Оренда будівельних лісів</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">20 000</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">Будуть орендовані різні типи лісів від фасадних до вузьких.</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">15</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Адміністративні витрати</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">300 000</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">Авторський нагляд, розробка актів виконаних робіт, оптимізація робіт, бухгалтерські витрати, розробка таймінгів.</td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 transition-colors">
-                                <td class="py-4 px-6 text-center font-medium text-slate-500">16</td>
-                                <td class="py-4 px-6 font-semibold text-slate-900">Залучення спеціаліста по опору матеріалів для прорахунку кріплень</td>
-                                <td class="py-4 px-6 text-right font-mono font-medium text-slate-900">60 000</td>
-                                <td class="py-4 px-6 text-sm text-slate-600">Розрахунок динамічних та статичних навантажень.</td>
-                            </tr>
-                        </tbody>
-                        <tfoot class="bg-brand-50 border-t-2 border-brand-200">
-                            <tr>
-                                <td colspan="2" class="py-6 px-6 font-bold text-xl text-slate-900 text-right uppercase tracking-wide">Загальна вартість з ПДВ:</td>
-                                <td class="py-6 px-6 text-right font-mono font-bold text-2xl text-brand-600 whitespace-nowrap">9 942 995 ₴</td>
-                                <td></td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
+            <!-- Table Container -->
+            <div class="md:bg-white md:border md:border-slate-200 md:rounded-2xl md:shadow-xl md:overflow-hidden">
+                <table class="w-full text-left border-collapse block md:table">
+                    <!-- Desktop Header -->
+                    <thead class="hidden md:table-header-group bg-slate-900 text-white">
+                        <tr>
+                            <th class="py-4 px-6 font-semibold text-sm w-16 text-center border-b border-slate-700">№</th>
+                            <th class="py-4 px-6 font-semibold text-sm border-b border-slate-700">Назва</th>
+                            <th class="py-4 px-6 font-semibold text-sm w-48 text-right border-b border-slate-700">Вартість, грн</th>
+                            <th class="py-4 px-6 font-semibold text-sm w-1/3 border-b border-slate-700">Примітка</th>
+                        </tr>
+                    </thead>
+                    
+                    <!-- Responsive Body -->
+                    <tbody class="block md:table-row-group md:divide-y md:divide-slate-100">
+                        
+                        <!-- Item 1 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">1</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Обладання Аеростар з автоматикою</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>7 040 495</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                У вартості враховано страхування, гарантія на 1 рік з моменту запуску. Подальше обслуговування рахується за окремим договором.
+                            </td>
+                        </tr>
+
+                        <!-- Item 2 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">2</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Повітропроводи утеплені в окожушці</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>707 500</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                Попередньо приймаємо площу 200 м.кв внутрішньої поверхні (1200 за квадрат)+ мінвата Lamella Mat 50 мм 250 квадратів (550 за квадрат) + окожушко 300 м.кв. (1100 за квадрат). З урахуванням шинорейки, ущільнювача, герметика і т.п.
+                            </td>
+                        </tr>
+
+                        <!-- Item 3 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">3</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Метал на кріплення із кутика 40х40х3</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>200 000</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                Вартість орієнтовна, адже ще буде обговорюватися щодо дизайну і загальної технології кріплення. В даній ціні враховано метал + виварення конструкції.
+                            </td>
+                        </tr>
+
+                        <!-- Item 4 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">4</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Кабельно-провідникова продукція та кабельні канали</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>150 000</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                Дана ціна максимально орієнтовна. Вартість цих матеріалів по факту згідно виконавчої схеми за роздрібними цінами.
+                            </td>
+                        </tr>
+
+                        <!-- Item 5 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">5</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Монтажний набір</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>120 000</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                Специфічні метізи, скотч фольгований, віброопори та багато іншого.
+                            </td>
+                        </tr>
+
+                        <!-- Item 6 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">6</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Розробка 3D візуалізації та ВІМ моделювання</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>30 000</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                -
+                            </td>
+                        </tr>
+
+                        <!-- Item 7 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">7</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Аудит та використання наявних матеріалів</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>10 000</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                Ретельна інвентаризація фасонних деталей, що вже є на об'єкті. По факту використання вартість цих деталей буде відмінусована від фінального кошторису.
+                            </td>
+                        </tr>
+
+                        <!-- Item 8 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">8</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Розробка деталювання</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>25 000</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                Процес замовлення наявних деталей після етапу погодження і підтвердження.
+                            </td>
+                        </tr>
+
+                        <!-- Item 9 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">9</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Монтажні роботи повітропроводів на висоті</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>450 000</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                Вартість монтажу 1 м.кв становить 900 грн. Попередньо приймаємо об'єм робіт на 500 м.кв. У вартість рахується площа поверхні повітропроводів та окожушко. Також у вартість входе монтаж і розробка кріплень.
+                            </td>
+                        </tr>
+
+                        <!-- Item 10 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">10</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Монтаж обладнання</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>300 000</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                З залученням використання підіймальної техніки.
+                            </td>
+                        </tr>
+
+                        <!-- Item 11 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">11</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Пусконаладжувальні роботи</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>400 000</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                Збір щита автоматики, його налаштування, балансування.
+                            </td>
+                        </tr>
+
+                        <!-- Item 12 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">12</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Оренда підіймальної техніки</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>60 000</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                6 днів роботи крану для підйому обладнання та матеріалів.
+                            </td>
+                        </tr>
+
+                        <!-- Item 13 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">13</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Транспортні витрати</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>70 000</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                Орієнтовна вартість. Включає доставку матеріалів та обладнання по Україні та логістика по місту.
+                            </td>
+                        </tr>
+
+                        <!-- Item 14 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">14</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Оренда будівельних лісів</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>20 000</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                Будуть орендовані різні типи лісів від фасадних до вузьких.
+                            </td>
+                        </tr>
+
+                        <!-- Item 15 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">15</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Адміністративні витрати</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>300 000</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                Авторський нагляд, розробка актів виконаних робіт, оптимізація робіт, бухгалтерські витрати, розробка таймінгів.
+                            </td>
+                        </tr>
+
+                        <!-- Item 16 -->
+                        <tr class="flex flex-col md:table-row bg-slate-50 md:bg-transparent border border-slate-200 md:border-none rounded-2xl md:rounded-none mb-6 md:mb-0 p-5 md:p-0 hover:bg-slate-50 transition-colors">
+                            <td class="md:py-4 md:px-6 font-medium text-slate-500 flex items-center justify-between md:justify-center md:table-cell mb-3 md:mb-0">
+                                <span class="md:hidden font-bold text-xs uppercase tracking-wider text-slate-400">Позиція №</span>
+                                <span class="bg-white md:bg-transparent px-3 py-1 md:p-0 rounded-md shadow-sm md:shadow-none border border-slate-200 md:border-none text-slate-700 md:text-slate-500">16</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 font-semibold text-slate-900 text-lg md:text-base mb-4 md:mb-0 block md:table-cell">Залучення спеціаліста по опору матеріалів для прорахунку кріплень</td>
+                            <td class="md:py-4 md:px-6 font-mono font-medium text-brand-700 md:text-slate-900 text-lg md:text-base flex items-center justify-between md:justify-end md:table-cell bg-brand-50 md:bg-transparent p-3 rounded-lg md:rounded-none mb-4 md:mb-0 border border-brand-100 md:border-none md:text-right">
+                                <span class="md:hidden font-semibold text-brand-600 font-sans text-sm">Вартість:</span>
+                                <span>60 000</span>
+                            </td>
+                            <td class="md:py-4 md:px-6 text-sm text-slate-600 block md:table-cell">
+                                <span class="md:hidden font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-wider">Примітка:</span>
+                                Розрахунок динамічних та статичних навантажень.
+                            </td>
+                        </tr>
+                    </tbody>
+                    
+                    <!-- Responsive Footer -->
+                    <tfoot class="block md:table-footer-group mt-6 md:mt-0">
+                        <tr class="flex flex-col md:table-row bg-brand-600 md:bg-brand-50 border border-brand-600 md:border-t-2 md:border-brand-200 rounded-2xl md:rounded-none p-6 md:p-0 shadow-lg md:shadow-none">
+                            <td colspan="2" class="md:py-6 md:px-6 font-bold text-lg md:text-xl text-brand-100 md:text-slate-900 text-center md:text-right uppercase tracking-wide block md:table-cell mb-2 md:mb-0">
+                                Загальна вартість з ПДВ:
+                            </td>
+                            <td class="md:py-6 md:px-6 text-center md:text-right font-mono font-bold text-3xl md:text-2xl text-white md:text-brand-600 whitespace-nowrap block md:table-cell">
+                                9 942 995 ₴
+                            </td>
+                            <td class="hidden md:table-cell"></td>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
         </div>
     </section>
